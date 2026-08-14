@@ -21,6 +21,11 @@ dotenv.config();
 connectDB();
 
 const app = express();
+
+app.get("/", (req, res) => {
+  res.status(200).send("Clothing Exchange Marketplace Backend is running!");
+});
+
 const httpServer = createServer(app);
 
 // Setup Socket.io
