@@ -8,7 +8,7 @@ import Avatar from '../components/ui/Avatar';
 import Badge from '../components/ui/Badge';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const ENDPOINT = import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL.replace('/api', '') : 'http://localhost:5000';
+const ENDPOINT = import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL.replace('/api', '') : 'import.meta.env.VITE_API_URL';
 var socket, selectedChatCompare;
 
 const Chat = () => {
